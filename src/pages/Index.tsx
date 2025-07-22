@@ -13,6 +13,7 @@ import BestieMomentGame from '@/components/BestieMomentGame';
 import SideDecorations from '@/components/SideDecorations';
 import SectionDivider from '@/components/SectionDivider';
 import Checkpoint from '@/components/Checkpoint';
+import GeometricBackground from '@/components/GeometricBackground';
 import CatAnimation from '@/components/CatAnimation';
 import BalloonAnimation from '@/components/BalloonAnimation';
 import StarAnimation from '@/components/StarAnimation';
@@ -36,7 +37,6 @@ const Index = () => {
       <StarAnimation />
       
       {!showContent ? (
-        // Grand Opening Header
         // Grand Opening Header
         <div className="min-h-screen flex items-center justify-center px-6 relative z-10">
           <div className="text-center space-y-12 max-w-4xl mx-auto">
@@ -81,6 +81,7 @@ const Index = () => {
       ) : (
         // Main Website Content
         <div className="relative z-10 celebration-bounce">
+          <GeometricBackground />
           {/* Hero Section */}
           <div className="min-h-screen flex items-center justify-center px-6 py-12 relative">
             <ScrapbookPage>
