@@ -9,6 +9,7 @@ import ComplimentGame from '@/components/ComplimentGame';
 import OurStoryChapters from '@/components/OurStoryChapters';
 import BirthdayNewspaper from '@/components/BirthdayNewspaper';
 import MemoryScavengerHunt from '@/components/MemoryScavengerHunt';
+import BestieMomentGame from '@/components/BestieMomentGame';
 import birthdayHero from '@/assets/birthday-hero.jpg';
 
 const Index = () => {
@@ -26,7 +27,7 @@ const Index = () => {
         // Grand Opening Header
         <div className="min-h-screen flex items-center justify-center px-6 relative z-10">
           <div className="text-center space-y-8 max-w-4xl mx-auto">
-            <div className="birthday-pulse">
+            <div className="birthday-pulse sparkle-animation">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold gradient-primary bg-clip-text text-transparent mb-6">
                 Happy Birthday,
               </h1>
@@ -67,7 +68,7 @@ const Index = () => {
           {/* Hero Section */}
           <div className="min-h-screen flex items-center justify-center px-6 py-12">
             <div className="text-center space-y-8 max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold gradient-primary bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-6xl font-bold gradient-primary bg-clip-text text-transparent welcome-glow">
                 🎉 Welcome to Your Special Day! 🎉
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground">
@@ -109,6 +110,11 @@ const Index = () => {
           {/* Video Wall Section */}
           <section className="py-16 bg-gradient-to-r from-accent/10 to-secondary/10">
             <VideoWall />
+          </section>
+
+          {/* Bestie Moment Guessing Game */}
+          <section className="py-16 bg-gradient-to-r from-primary/5 to-celebration-pink/5">
+            <BestieMomentGame />
           </section>
 
           {/* Compliment Game Section */}
