@@ -6,6 +6,9 @@ import PhotoGallery from '@/components/PhotoGallery';
 import PoemDisplay from '@/components/PoemDisplay';
 import VideoWall from '@/components/VideoWall';
 import ComplimentGame from '@/components/ComplimentGame';
+import OurStoryChapters from '@/components/OurStoryChapters';
+import BirthdayNewspaper from '@/components/BirthdayNewspaper';
+import MemoryScavengerHunt from '@/components/MemoryScavengerHunt';
 import birthdayHero from '@/assets/birthday-hero.jpg';
 
 const Index = () => {
@@ -78,13 +81,28 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Our Story Interactive Chapters */}
+          <section className="py-16 bg-gradient-to-r from-accent/10 to-celebration-purple/10">
+            <OurStoryChapters />
+          </section>
+
           {/* Photo Gallery Section */}
           <section className="py-16 bg-gradient-to-r from-secondary/10 to-accent/10">
             <PhotoGallery />
           </section>
 
-          {/* Poem Display Section */}
+          {/* Birthday Newspaper */}
           <section className="py-16">
+            <BirthdayNewspaper />
+          </section>
+
+          {/* Memory Scavenger Hunt */}
+          <section className="py-16 bg-gradient-to-r from-celebration-pink/10 to-celebration-yellow/10">
+            <MemoryScavengerHunt />
+          </section>
+
+          {/* Poem Display Section */}
+          <section className="py-16 bg-gradient-to-r from-celebration-green/10 to-secondary/10">
             <PoemDisplay />
           </section>
 
