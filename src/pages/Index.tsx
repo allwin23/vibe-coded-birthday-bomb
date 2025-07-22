@@ -10,7 +10,11 @@ import OurStoryChapters from '@/components/OurStoryChapters';
 import BirthdayNewspaper from '@/components/BirthdayNewspaper';
 import MemoryScavengerHunt from '@/components/MemoryScavengerHunt';
 import BestieMomentGame from '@/components/BestieMomentGame';
-import birthdayHero from '@/assets/birthday-hero.jpg';
+import DecorativeElements from '@/components/DecorativeElements';
+import CatAnimation from '@/components/CatAnimation';
+import BalloonAnimation from '@/components/BalloonAnimation';
+import StarAnimation from '@/components/StarAnimation';
+
 
 const Index = () => {
   const [showContent, setShowContent] = useState(false);
@@ -20,45 +24,53 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-secondary/30 to-accent/20 relative overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-celebration-pink/30 via-accent/20 to-celebration-yellow/30 animate-gradient-move relative overflow-x-hidden">
       <FloatingEmojis />
+      <DecorativeElements />
+      <CatAnimation />
+      <BalloonAnimation />
+      <StarAnimation />
       
       {!showContent ? (
         // Grand Opening Header
+        // Grand Opening Header
         <div className="min-h-screen flex items-center justify-center px-6 relative z-10">
-          <div className="text-center space-y-8 max-w-4xl mx-auto">
-            <div className="birthday-pulse sparkle-animation">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold gradient-primary bg-clip-text text-transparent mb-6">
-                Happy Birthday,
-              </h1>
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold gradient-celebration bg-clip-text text-transparent mb-8">
-                [Bestie's Name]! 🥳
-              </h2>
+          <div className="text-center space-y-12 max-w-4xl mx-auto">
+            <div className="relative inline-block">
+              <span className="absolute -inset-2 blur-2xl opacity-60 animate-pulse bg-gradient-to-r from-celebration-pink via-celebration-yellow to-celebration-green rounded-full"></span>
+              <div className="relative z-10 animate-fade-in-down">
+                <h1
+                  className="text-6xl md:text-8xl lg:text-9xl font-black text-white bg-gradient-to-r from-celebration-pink via-celebration-yellow to-celebration-green bg-clip-text mb-4 drop-shadow-xl animate-text-glow"
+                  style={{ textShadow: '0 6px 40px #f472b6, 0 4px 16px #facc15' }}
+                >
+                  Happy Birthday,
+                </h1>
+                <h2
+                  className="text-5xl md:text-7xl lg:text-8xl font-bold text-white bg-gradient-to-r from-celebration-green via-celebration-purple to-celebration-pink bg-clip-text mb-8 animate-fade-in-up"
+                  style={{ textShadow: '0 4px 24px #a7f3d0, 0 2px 8px #c4b5fd' }}
+                >
+                  [Bestie's Name]! <span className="inline-block animate-bounce">🥳</span>
+                </h2>
+              </div>
             </div>
-            
-            <div className="celebration-bounce">
-              <p className="text-xl md:text-3xl text-foreground font-medium mb-12">
-                To the most amazing person I know! ✨
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+              <p className="text-xl md:text-3xl text-foreground font-medium mb-12 drop-shadow-md animate-wiggle">
+                To the most amazing person I know! <span className="inline-block animate-spin-slow">✨</span>
               </p>
             </div>
-
             <Button
               onClick={revealWebsite}
               variant="birthday"
               size="xl"
-              className="group magical-glow text-xl px-16 py-6"
+              className="group magical-glow text-xl px-16 py-6 animate-fade-in-up"
+              style={{ animationDelay: '1s' }}
             >
               <Gift className="w-8 h-8 mr-4 group-hover:bounce" />
               Click for a Surprise!
               <PartyPopper className="w-8 h-8 ml-4 group-hover:bounce" />
             </Button>
-            
-            <div className="mt-12 opacity-70">
-              <img 
-                src={birthdayHero} 
-                alt="Birthday celebration" 
-                className="rounded-2xl shadow-magical mx-auto max-w-2xl w-full"
-              />
+            <div className="mt-12 opacity-80 animate-fade-in-up" style={{ animationDelay: '1.5s' }}>
+              
             </div>
           </div>
         </div>
