@@ -1,6 +1,6 @@
 import { Heart, Sparkles, Music, Star, Gift } from 'lucide-react';
 
-const elements = [
+const iconElements = [
   { Icon: Heart, color: 'text-celebration-pink' },
   { Icon: Sparkles, color: 'text-celebration-yellow' },
   { Icon: Music, color: 'text-celebration-purple' },
@@ -11,18 +11,19 @@ const elements = [
 const DecorativeElements = () => {
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-      {Array.from({ length: 20 }).map((_, i) => {
-        const Element = elements[i % elements.length];
-        const size = Math.random() * 24 + 12;
-        const animationDuration = Math.random() * 5 + 5;
-        const animationDelay = Math.random() * 5;
+      {/* Existing Icon Elements */}
+      {Array.from({ length: 15 }).map((_, i) => {
+        const Element = iconElements[i % iconElements.length];
+        const size = Math.random() * 20 + 10;
+        const animationDuration = Math.random() * 8 + 7;
+        const animationDelay = Math.random() * 10;
         const top = Math.random() * 100;
         const left = Math.random() * 100;
 
         return (
           <Element.Icon
-            key={i}
-            className={`${Element.color} absolute animate-pulse`}
+            key={`icon-${i}`}
+            className={`${Element.color} absolute animate-pulse opacity-70`}
             style={{
               top: `${top}%`,
               left: `${left}%`,
@@ -34,6 +35,8 @@ const DecorativeElements = () => {
           />
         );
       })}
+
+      
     </div>
   );
 };

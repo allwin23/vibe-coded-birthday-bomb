@@ -10,10 +10,12 @@ import OurStoryChapters from '@/components/OurStoryChapters';
 import BirthdayNewspaper from '@/components/BirthdayNewspaper';
 import MemoryScavengerHunt from '@/components/MemoryScavengerHunt';
 import BestieMomentGame from '@/components/BestieMomentGame';
-import DecorativeElements from '@/components/DecorativeElements';
+import SideDecorations from '@/components/SideDecorations';
 import CatAnimation from '@/components/CatAnimation';
 import BalloonAnimation from '@/components/BalloonAnimation';
 import StarAnimation from '@/components/StarAnimation';
+import ScrapbookText from '@/components/ScrapbookText';
+import ScrapbookPage from '@/components/ScrapbookPage';
 
 
 const Index = () => {
@@ -26,7 +28,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-celebration-pink/30 via-accent/20 to-celebration-yellow/30 animate-gradient-move relative overflow-x-hidden">
       <FloatingEmojis />
-      <DecorativeElements />
+      <SideDecorations />
       <CatAnimation />
       <BalloonAnimation />
       <StarAnimation />
@@ -78,20 +80,20 @@ const Index = () => {
         // Main Website Content
         <div className="relative z-10 celebration-bounce">
           {/* Hero Section */}
-          <div className="min-h-screen flex items-center justify-center px-6 py-12">
-            <div className="text-center space-y-8 max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold gradient-primary bg-clip-text text-transparent welcome-glow">
-                🎉 Welcome to Your Special Day! 🎉
-              </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground">
-                A digital love bomb crafted with all my heart 💝
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 mt-8">
-                <Heart className="w-8 h-8 text-celebration-pink animate-pulse" />
-                <Sparkles className="w-8 h-8 text-celebration-yellow animate-pulse" />
-                <Heart className="w-8 h-8 text-primary animate-pulse" />
+          <div className="min-h-screen flex items-center justify-center px-6 py-12 relative">
+            <ScrapbookPage>
+              <div className="text-center space-y-8 max-w-4xl mx-auto">
+                <ScrapbookText text="Welcome to Your Special Day!" />
+                <p className="text-xl md:text-2xl text-muted-foreground">
+                  A digital love bomb crafted with all my heart 💝
+                </p>
+                <div className="flex flex-wrap justify-center gap-4 mt-8">
+                  <Heart className="w-8 h-8 text-celebration-pink animate-pulse" />
+                  <Sparkles className="w-8 h-8 text-celebration-yellow animate-pulse" />
+                  <Heart className="w-8 h-8 text-primary animate-pulse" />
+                </div>
               </div>
-            </div>
+            </ScrapbookPage>
           </div>
 
           {/* Our Story Interactive Chapters */}

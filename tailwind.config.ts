@@ -92,11 +92,17 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'neo-line': {
+          '0%': { transform: 'translateX(-100%) scaleX(0.5)', opacity: '0' },
+          '50%': { transform: 'translateX(0) scaleX(1)', opacity: '0.7' },
+          '100%': { transform: 'translateX(100%) scaleX(0.5)', opacity: '0' },
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'neo-line': 'neo-line 15s ease-in-out infinite',
 			}
 		}
 	},
