@@ -4,13 +4,20 @@ import { Newspaper, Star, Calendar, Coffee, Music, MapPin } from 'lucide-react';
 const BirthdayNewspaper = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold gradient-celebration bg-clip-text text-transparent mb-4">
-          📰 The Bestie's Birthday Chronicle 📰
+      <div className="text-center mb-16 relative">
+        <h2 
+          className="text-5xl md:text-6xl font-black text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-xl animate-text-glow"
+          style={{ textShadow: '0 4px 20px #2563eb, 0 2px 10px #ec4899' }}
+        >
+          The Bestie's Birthday Chronicle
         </h2>
-        <p className="text-xl text-muted-foreground">
+        <p 
+          className="text-xl font-medium text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg animate-text-glow"
+          style={{ textShadow: '0 2px 10px #2563eb, 0 1px 5px #ec4899' }}
+        >
           "All the News That's Fit to Celebrate!"
         </p>
+        <div className="w-32 h-1 bg-primary/20 mx-auto mt-6 rounded-full"></div>
       </div>
 
       <Card className="p-8 shadow-magical bg-gradient-to-br from-card to-accent/10 border-primary/20 newspaper-style">

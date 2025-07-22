@@ -3,10 +3,14 @@ import { Card } from '@/components/ui/card';
 const VideoWall = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold gradient-primary bg-clip-text text-transparent mb-4">
-          🎬 Reel Moments 🎬
+      <div className="text-center mb-16 relative">
+        <h2 
+          className="text-5xl md:text-6xl font-black text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-xl animate-text-glow"
+          style={{ textShadow: '0 4px 20px #2563eb, 0 2px 10px #ec4899' }}
+        >
+          Reel Moments
         </h2>
+        <div className="w-32 h-1 bg-primary/20 mx-auto mt-6 rounded-full"></div>
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

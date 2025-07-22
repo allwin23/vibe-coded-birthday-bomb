@@ -34,10 +34,14 @@ const PoemDisplay = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold gradient-celebration bg-clip-text text-transparent mb-4">
-          💝 Words from the Heart 💝
+      <div className="text-center mb-16 relative">
+        <h2 
+          className="text-5xl md:text-6xl font-black text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-xl animate-text-glow"
+          style={{ textShadow: '0 4px 20px #2563eb, 0 2px 10px #ec4899' }}
+        >
+          Words from the Heart
         </h2>
+        <div className="w-32 h-1 bg-primary/20 mx-auto mt-6 rounded-full"></div>
       </div>
       
       <Card className="p-8 shadow-magical bg-gradient-to-br from-card to-secondary/20 border-primary/20">

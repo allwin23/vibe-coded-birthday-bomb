@@ -11,6 +11,8 @@ import BirthdayNewspaper from '@/components/BirthdayNewspaper';
 import MemoryScavengerHunt from '@/components/MemoryScavengerHunt';
 import BestieMomentGame from '@/components/BestieMomentGame';
 import SideDecorations from '@/components/SideDecorations';
+import SectionDivider from '@/components/SectionDivider';
+import Checkpoint from '@/components/Checkpoint';
 import CatAnimation from '@/components/CatAnimation';
 import BalloonAnimation from '@/components/BalloonAnimation';
 import StarAnimation from '@/components/StarAnimation';
@@ -26,7 +28,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-celebration-pink/30 via-accent/20 to-celebration-yellow/30 animate-gradient-move relative overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-celebration-pink/30 via-accent/20 to-celebration-yellow/30 animate-gradient-move relative">
       <FloatingEmojis />
       <SideDecorations />
       <CatAnimation />
@@ -97,55 +99,76 @@ const Index = () => {
           </div>
 
           {/* Our Story Interactive Chapters */}
-          <section className="py-16 bg-gradient-to-r from-accent/10 to-celebration-purple/10">
+          <section className="py-12 relative">
+            <Checkpoint title="Our Story" position="left" />
             <OurStoryChapters />
           </section>
+          <SectionDivider />
 
           {/* Photo Gallery Section */}
-          <section className="py-16 bg-gradient-to-r from-secondary/10 to-accent/10">
+          <section className="py-12 relative">
+            <Checkpoint title="Gallery" position="right" />
             <PhotoGallery />
           </section>
+          <SectionDivider />
 
           {/* Birthday Newspaper */}
-          <section className="py-16">
+          <section className="py-12 relative">
+            <Checkpoint title="Chronicle" position="left" />
             <BirthdayNewspaper />
           </section>
+          <SectionDivider />
 
           {/* Memory Scavenger Hunt */}
-          <section className="py-16 bg-gradient-to-r from-celebration-pink/10 to-celebration-yellow/10">
+          <section className="py-12 relative">
+            <Checkpoint title="Scavenger Hunt" position="right" />
             <MemoryScavengerHunt />
           </section>
+          <SectionDivider />
 
           {/* Poem Display Section */}
-          <section className="py-16 bg-gradient-to-r from-celebration-green/10 to-secondary/10">
+          <section className="py-12 relative">
+            <Checkpoint title="Poem" position="left" />
             <PoemDisplay />
           </section>
+          <SectionDivider />
 
           {/* Video Wall Section */}
-          <section className="py-16 bg-gradient-to-r from-accent/10 to-secondary/10">
+          <section className="py-12 relative">
+            <Checkpoint title="Videos" position="right" />
             <VideoWall />
           </section>
+          <SectionDivider />
 
           {/* Bestie Moment Guessing Game */}
-          <section className="py-16 bg-gradient-to-r from-primary/5 to-celebration-pink/5">
+          <section className="py-12 relative">
+            <Checkpoint title="Bestie Game" position="left" />
             <BestieMomentGame />
           </section>
+          <SectionDivider />
 
           {/* Compliment Game Section */}
-          <section className="py-16">
+          <section className="py-12 relative">
+            <Checkpoint title="Compliments" position="right" />
             <ComplimentGame />
           </section>
 
           {/* Footer */}
-          <footer className="py-16 text-center bg-gradient-to-r from-primary/5 to-accent/5">
+          <footer className="py-24 text-center">
             <div className="max-w-4xl mx-auto px-6">
-              <h3 className="text-3xl font-bold gradient-celebration bg-clip-text text-transparent mb-4">
+              <h3 
+                className="text-4xl md:text-5xl font-black text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-xl animate-text-glow"
+                style={{ textShadow: '0 4px 20px #2563eb, 0 2px 10px #ec4899' }}
+              >
                 Made with endless love and friendship 💕
               </h3>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p 
+                className="text-xl font-medium text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg animate-text-glow"
+                style={{ textShadow: '0 2px 10px #2563eb, 0 1px 5px #ec4899' }}
+              >
                 Hope your special day is as wonderful as you are!
               </p>
-              <div className="flex justify-center space-x-4">
+              <div className="flex justify-center space-x-4 mt-8">
                 <Heart className="w-8 h-8 text-celebration-pink float-animation" />
                 <Sparkles className="w-8 h-8 text-celebration-yellow float-animation" style={{ animationDelay: '1s' }} />
                 <Heart className="w-8 h-8 text-primary float-animation" style={{ animationDelay: '2s' }} />

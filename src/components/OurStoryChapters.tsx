@@ -47,13 +47,23 @@ const OurStoryChapters = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold gradient-primary bg-clip-text text-transparent mb-4">
-          📖 Our Story Interactive Chronicle 📖
+      <div className="text-center mb-16 relative">
+        <div className="absolute -top-4 -left-4 w-16 h-16 bg-celebration-yellow/50 rounded-full blur-2xl animate-pulse"></div>
+        <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-celebration-pink/50 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        
+        <h2 
+          className="text-5xl md:text-6xl font-black text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-xl animate-text-glow"
+          style={{ textShadow: '0 4px 20px #2563eb, 0 2px 10px #ec4899' }}
+        >
+          Our Unforgettable Story
         </h2>
-        <p className="text-xl text-muted-foreground">
-          Navigate through the chapters of our beautiful friendship
+        <p 
+          className="text-xl font-medium text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg animate-text-glow"
+          style={{ textShadow: '0 2px 10px #2563eb, 0 1px 5px #ec4899' }}
+        >
+          A journey through the chapters of our amazing friendship
         </p>
+        <div className="w-32 h-1 bg-primary/20 mx-auto mt-6 rounded-full"></div>
       </div>
 
       <Card className="p-8 shadow-magical bg-gradient-to-br from-card to-secondary/20 border-primary/20">

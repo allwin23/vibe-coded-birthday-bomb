@@ -135,21 +135,28 @@ const BestieMomentGame = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-6">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold gradient-primary bg-clip-text text-transparent mb-4">
-          🎯 Guess the Bestie Moment!
+      <div className="text-center mb-16 relative">
+        <h2 
+          className="text-5xl md:text-6xl font-black text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-xl animate-text-glow"
+          style={{ textShadow: '0 4px 20px #2563eb, 0 2px 10px #ec4899' }}
+        >
+          Guess the Bestie Moment!
         </h2>
-        <p className="text-lg text-muted-foreground">
+        <p 
+          className="text-xl font-medium text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg animate-text-glow"
+          style={{ textShadow: '0 2px 10px #2563eb, 0 1px 5px #ec4899' }}
+        >
           Can you guess what memory this cropped image is from?
         </p>
-        <div className="flex justify-center items-center gap-4 mt-4">
-          <Badge variant="secondary" className="text-lg px-4 py-2">
-            Round {currentMoment + 1} of {gameMoments.length}
-          </Badge>
-          <Badge variant="outline" className="text-lg px-4 py-2">
-            Score: {score}
-          </Badge>
-        </div>
+        <div className="w-32 h-1 bg-primary/20 mx-auto mt-6 rounded-full"></div>
+      </div>
+      <div className="flex justify-center items-center gap-4 mb-8">
+        <Badge variant="secondary" className="text-lg px-4 py-2">
+          Round {currentMoment + 1} of {gameMoments.length}
+        </Badge>
+        <Badge variant="outline" className="text-lg px-4 py-2">
+          Score: {score}
+        </Badge>
       </div>
 
       <Card className="shadow-magical">
