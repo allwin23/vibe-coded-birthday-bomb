@@ -20,6 +20,7 @@ import StarAnimation from '@/components/StarAnimation';
 import ScrapbookText from '@/components/ScrapbookText';
 import ScrapbookPage from '@/components/ScrapbookPage';
 import AnuuuTextAnimation from '@/components/ui/AnuuuTextAnimation';
+import ConfettiRain from '@/components/ui/ConfettiRain';
 
 
 const Index = () => {
@@ -75,7 +76,6 @@ const Index = () => {
               <PartyPopper className="w-8 h-8 ml-4 group-hover:bounce" />
             </Button>
             <div className="mt-12 opacity-80 animate-fade-in-up" style={{ animationDelay: '1.5s' }}>
-              
             </div>
           </div>
         </div>
@@ -83,11 +83,12 @@ const Index = () => {
         // Main Website Content
         <div className="relative z-10 celebration-bounce">
           <GeometricBackground />
+          <ConfettiRain />
           <div className="fixed inset-0 z-0 pointer-events-none">
   <AnuuuTextAnimation />
 </div>
-
-
+            
+            
           {/* Hero Section */}
           <div className="min-h-screen flex items-center justify-center px-6 py-12 relative">
             <AnuuuTextAnimation />

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AnuuuTextAnimation = () => {
-  const count = 5; // fewer to make it less frequent
+  const count = 7; // fewer to make it less frequent
   const usedPositions: { top: number; left: number }[] = [];
 
   const getNonOverlappingPosition = () => {
