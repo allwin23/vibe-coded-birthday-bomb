@@ -12,20 +12,18 @@ const VideoWall = () => {
         </h2>
         <div className="w-32 h-1 bg-primary/20 mx-auto mt-6 rounded-full"></div>
       </div>
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Ross & Rachel Video */}
+        {/* 🎥 Ross & Rachel Video */}
         <Card className="p-6 shadow-celebration hover:shadow-magical transition-all duration-300">
-          <div className="aspect-video mb-4 bg-muted rounded-lg flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="text-4xl mb-4">🎥</div>
-              <p className="text-lg font-medium text-muted-foreground mb-2">
-                Ross & Rachel Compilation
-              </p>
-              <p className="text-sm text-muted-foreground">
-                [Insert YouTube embed URL here]
-              </p>
-            </div>
+          <div className="aspect-video mb-4 bg-muted rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.youtube.com/embed/kvtjJ_GGIxQ?si=V0ze1eWOa974azJa"
+              title="Ross & Rachel Compilation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
           </div>
           <div className="text-center">
             <p className="text-lg font-medium text-primary">
@@ -34,18 +32,10 @@ const VideoWall = () => {
           </div>
         </Card>
 
-        {/* Personal Video */}
+        {/* 📱 Personal Video Placeholder */}
         <Card className="p-6 shadow-celebration hover:shadow-magical transition-all duration-300">
-          <div className="aspect-video mb-4 bg-muted rounded-lg flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="text-4xl mb-4">📱</div>
-              <p className="text-lg font-medium text-muted-foreground mb-2">
-                Personal Video
-              </p>
-              <p className="text-sm text-muted-foreground">
-                [Insert Personal Video URL here]
-              </p>
-            </div>
+          <div className="aspect-video mb-4 bg-muted rounded-lg flex items-center justify-center text-center text-muted-foreground">
+            📱 Insert your personal video embed here
           </div>
           <div className="text-center">
             <p className="text-lg font-medium text-primary">
@@ -54,9 +44,9 @@ const VideoWall = () => {
           </div>
         </Card>
       </div>
-      
+
       <div className="text-center mt-8 text-sm text-muted-foreground">
-        <p>🔧 Replace the placeholder areas with actual YouTube embed codes or video links!</p>
+        <p>📌 You can add more YouTube Shorts or Reels by replacing the links above!</p>
       </div>
     </div>
   );
