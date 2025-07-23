@@ -19,6 +19,7 @@ import BalloonAnimation from '@/components/BalloonAnimation';
 import StarAnimation from '@/components/StarAnimation';
 import ScrapbookText from '@/components/ScrapbookText';
 import ScrapbookPage from '@/components/ScrapbookPage';
+import AnuuuTextAnimation from '@/components/ui/AnuuuTextAnimation';
 
 
 const Index = () => {
@@ -82,8 +83,14 @@ const Index = () => {
         // Main Website Content
         <div className="relative z-10 celebration-bounce">
           <GeometricBackground />
+          <div className="fixed inset-0 z-0 pointer-events-none">
+  <AnuuuTextAnimation />
+</div>
+
+
           {/* Hero Section */}
           <div className="min-h-screen flex items-center justify-center px-6 py-12 relative">
+            <AnuuuTextAnimation />
             <ScrapbookPage>
               <div className="text-center space-y-8 max-w-4xl mx-auto">
                 <ScrapbookText text="Welcome to Your Special Day!" />
@@ -98,11 +105,17 @@ const Index = () => {
               </div>
             </ScrapbookPage>
           </div>
+          <SectionDivider />
+         
 
+          {/* Our Story Section */}
           {/* Our Story Interactive Chapters */}
           <section className="py-12 relative">
+            
             <Checkpoint title="Our Story" position="left" />
+            
             <OurStoryChapters />
+            
           </section>
           <SectionDivider />
 
