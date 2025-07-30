@@ -4,7 +4,7 @@ const VideoWall = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="text-center mb-16 relative">
-        <h2 
+        <h2
           className="text-5xl md:text-6xl font-black text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-xl animate-text-glow"
           style={{ textShadow: '0 4px 20px #2563eb, 0 2px 10px #ec4899' }}
         >
@@ -32,10 +32,14 @@ const VideoWall = () => {
           </div>
         </Card>
 
-        {/* 📱 Personal Video Placeholder */}
+        {/* 📱 Personal Video (Portrait) */}
         <Card className="p-6 shadow-celebration hover:shadow-magical transition-all duration-300">
-          <div className="aspect-video mb-4 bg-muted rounded-lg flex items-center justify-center text-center text-muted-foreground">
-            📱 Insert your personal video embed here
+          <div className="aspect-video mb-4 bg-muted rounded-lg overflow-hidden">
+            <video
+              src="/videos/my-portrait-video.mp4"
+              controls
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
           <div className="text-center">
             <p className="text-lg font-medium text-primary">
@@ -53,3 +57,4 @@ const VideoWall = () => {
 };
 
 export default VideoWall;
+ 

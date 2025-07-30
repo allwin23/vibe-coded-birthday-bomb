@@ -21,37 +21,42 @@ const MemoryScavengerHunt = () => {
 
   const clues = [
     {
-      id: 1,
-      riddle: "Where caffeine flows and laughter grows, your favorite morning spot that everyone knows...",
-      hint: "☕ Think about our coffee dates!",
-      location: "Your Favorite Cafe",
-      reward: "A photo from our first coffee date together!",
-      icon: <Music className="w-6 h-6" />
-    },
+  id: 1,
+  riddle: "Where love wore a nurse's disguise, and every glance felt like a sweet surprise...",
+  hint: "🎭 Think of your favorite movie where mischief meets heart!",
+  location: "The place Remo first made you fun",
+  reward: "Yes Its a your fav movie   Remo 💙",
+  icon: <Music className="w-6 h-6" />
+}
+,
     {
-      id: 2,
-      riddle: "In pixels and frames, where memories are caught, the place where our silliest photos were brought...",
-      hint: "📸 Remember that photo booth adventure?",
-      location: "Photo Booth Memories",
-      reward: "A video montage of our funniest moments!",
-      icon: <Camera className="w-6 h-6" />
-    },
+  id: 3,
+  riddle: "In a song where raindrops tap like tiny drumbeats, and hearts sway like leaves in love’s breeze — you always hum along, eyes closed, as if the lyrics know your soul...",
+  hint: "☔ Sound and the rain knows its rhythm.",
+  location: "That one song where you always hum along",
+  reward: "One of you fav raling oligal 🎥✨",
+  //icon: <Umbrella className="w-6 h-6" />
+}
+,
     {
-      id: 3,
-      riddle: "Where melodies dance and our voices unite, the song that makes everything feel just right...",
-      hint: "🎵 Our friendship anthem!",
-      location: "Our Special Song",
-      reward: "A playlist of songs that define our friendship!",
-      icon: <Heart className="w-6 h-6" />
-    },
-    {
-      id: 4,
-      riddle: "The final treasure awaits where celebrations begin, look for the place where birthday magic comes from within...",
-      hint: "🎂 Where the birthday magic happens!",
-      location: "Birthday Surprise Location",
-      reward: "Your ultimate birthday surprise!",
-      icon: <Gift className="w-6 h-6" />
-    }
+  id: 4,
+  riddle: "A table for two, beneath soft yellow lights, where stories spilled over and eyes held quiet goodbyes. A place painted in French hues, and memories we chose not to lose... One guy came late for his ddate i made fun of him",
+  hint: "💬 Think: The café from our *last* pre-birthday outing. The one with laughter, pasta, and that perfect croissant.",
+  location: "Café de Paris",
+  reward: "A snapshot from that golden evening — just before your day began. 🎂📷",
+  //icon: //<Coffee className="w-6 h-6" />
+}
+,
+   {
+  id: 4,
+  riddle: "Not a place or a thing, but someone you know — who’s seen every version of you and never let go. He’s the constant in chaos, the calm in the storm, the hug in a sentence, the laugh that feels warm...",
+  hint: "🎂 Look for the one who’s been through it all with you. He’s not behind the curtain ",
+  location: "Allwin – The One Who’s Always There",
+  reward: "Your favorite person, your best friend — Allwin, waiting with a smile and a hug only he can give. 💙",
+  icon: <Gift className="w-6 h-6" />
+}
+
+
   ];
 
   const solveClue = (clueIndex: number) => {
@@ -192,10 +197,10 @@ const MemoryScavengerHunt = () => {
             <div className="bg-primary/10 p-6 rounded-lg">
               <Gift className="w-12 h-12 mx-auto mb-4 text-primary" />
               <p className="text-lg font-medium text-primary">
-                🎁 Congratulations! Your ultimate birthday surprise awaits!
+                🎁 Congratulations! Many More Happy returns of the day 💝
               </p>
               <p className="text-sm text-muted-foreground mt-2">
-                [Add your final birthday surprise details here!]
+                Your gift is just sitting right to you  
               </p>
             </div>
             <Button
@@ -212,7 +217,7 @@ const MemoryScavengerHunt = () => {
       )}
       
       <div className="text-center mt-8 text-sm text-muted-foreground">
-        <p>🎮 Customize the clues and rewards to match your unique friendship memories!</p>
+        <p>🎮 Positvity is the key to all ☺️☺️!</p>
       </div>
     </div>
   );

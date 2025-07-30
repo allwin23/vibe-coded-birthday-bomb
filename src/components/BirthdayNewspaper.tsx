@@ -30,10 +30,10 @@ const BirthdayNewspaper = () => {
             <div className="flex justify-center items-center space-x-4 text-sm text-muted-foreground">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-1" />
-                [Today's Date]
+                July 31, 2025
               </div>
               <div>SPECIAL BIRTHDAY EDITION</div>
-              <div>Vol. [Her Age] No. 1</div>
+              <div>Vol. 22 No. 1</div>
             </div>
           </div>
         </div>
@@ -41,10 +41,10 @@ const BirthdayNewspaper = () => {
         {/* Main Headline */}
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4">
-            🎉 HAPPY BIRTHDAY, [BESTIE'S NAME]! 🎉
+            🎉 HAPPY BIRTHDAY, ANU! 🎉
           </h2>
           <h3 className="text-lg md:text-xl text-primary font-semibold">
-            "A Decade of Amazing Friendship Celebrated Today"
+            "A Timeless Bond, Born in College and Blossomed Beyond"
           </h3>
         </div>
 
@@ -53,17 +53,17 @@ const BirthdayNewspaper = () => {
           {/* Main Article */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-primary border-b border-primary/30 pb-2">
-              🌟 FRIEND OF THE YEAR STRIKES AGAIN
+              🌟 THE HEART OF A FRIENDSHIP LEGEND
             </h3>
             <p className="text-sm leading-relaxed">
-              <strong>Local Legend</strong> - In an unsurprising turn of events, [Bestie's Name] has once again proven why she holds the unofficial title of "Most Amazing Friend Ever." Sources close to the birthday girl report unprecedented levels of kindness, hilarious jokes, and infectious laughter throughout the year.
+              <strong>College Diaries – 2022</strong> — On a warm September day in 2022, a friendship was born in a bustling college campus. That day, when I met Anu, little did I know I was about to find a soul twin. Within days, we clicked — no scripts, no expectations — just pure vibe and laughter that echoed through corridors.
             </p>
             <p className="text-sm leading-relaxed">
-              "She's just the best," said one close friend. "Every day with her is like having your own personal ray of sunshine."
+              Even after she followed her dream of becoming a doctor, leaving campus behind, our bond remained unshaken. From random texts about canteen food to deep 2 a.m. conversations, we stitched our friendship together, one thread of love and patience at a time.
             </p>
-            <div className="bg-muted/50 p-3 rounded text-xs italic">
-              📝 Customize this with your own funny "news article" about her amazing qualities!
-            </div>
+            <p className="text-sm leading-relaxed">
+              We've weathered silence during exam seasons, cheered for each other's wins, and held space through heartbreaks and fears. Anu has been my vault, my cheerleader, and my constant — and today, I raise this tribute to the most beautiful soul I know.
+            </p>
           </div>
 
           {/* Side Articles */}
@@ -73,7 +73,7 @@ const BirthdayNewspaper = () => {
                 🍰 WEATHER REPORT
               </h4>
               <p className="text-sm">
-                Today's forecast: 100% chance of birthday magic with scattered celebrations and a high probability of cake! 
+                Today's forecast calls for 100% chance of tight hugs, spontaneous giggles, and overwhelming waves of love. Expect a light drizzle of nostalgia and a downpour of cake!
               </p>
             </div>
 
@@ -82,7 +82,7 @@ const BirthdayNewspaper = () => {
                 📸 MEMORY LANE UPDATE
               </h4>
               <p className="text-sm">
-                Recent investigations reveal an abundance of epic photos and unforgettable moments. See gallery inside for evidence of pure friendship gold!
+                Investigation confirms: over 2.10 years of epic friendship stored in the heart's gallery. Photos include birthday outings, late-night calls, and moments that defined what true friendship looks like.
               </p>
             </div>
           </div>
@@ -96,20 +96,20 @@ const BirthdayNewspaper = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
             <Card className="p-4 bg-celebration-yellow/20">
               <Coffee className="w-6 h-6 text-celebration-yellow mb-2" />
-              <h4 className="font-bold">BEST COFFEE SHOP EVER!</h4>
-              <p>[Her Favorite Cafe] - Where amazing conversations happen daily!</p>
+              <h4 className="font-bold">CAFÉ CONFESSIONS</h4>
+              <p>Coffee dates pending at Cafe de Paris — where gossip brews and memories pour.</p>
             </Card>
             
             <Card className="p-4 bg-celebration-pink/20">
               <Music className="w-6 h-6 text-celebration-pink mb-2" />
-              <h4 className="font-bold">EPIC PLAYLIST ALERT!</h4>
-              <p>🎵 Songs that define our friendship - streaming now in the memories section!</p>
+              <h4 className="font-bold">SONG DEDICATIONS</h4>
+              <p>From “Love me like you do” to “Railin Oligal” — the playlist of us is playing loud today.</p>
             </Card>
             
             <Card className="p-4 bg-celebration-purple/20">
               <MapPin className="w-6 h-6 text-celebration-purple mb-2" />
-              <h4 className="font-bold">ADVENTURE DESTINATIONS</h4>
-              <p>📍 Future trip planning sessions available - bring your passport!</p>
+              <h4 className="font-bold">TRIP TO REMEMBER 📍</h4>
+              <p>📍 Coming soon: Our dream destination! Passport ready. Vibes set. Anu, let’s go!</p>
             </Card>
           </div>
         </div>
@@ -120,23 +120,50 @@ const BirthdayNewspaper = () => {
             💝 POETRY CORNER 💝
           </h3>
           <div className="bg-muted/30 p-6 rounded-lg text-center italic">
-            <p className="text-lg">
-              "A friend like you is rare to find,<br />
-              With the biggest heart and brilliant mind...<br />
-              <span className="text-primary font-semibold">[Continue with your beautiful poems here!]</span>"
+            <p className="text-lg leading-relaxed">
+              "We met on a September breeze,<br />
+              No promises, no guarantees.<br />
+              But laughter sparked and hearts aligned,<br />
+              In you, a soulmate I did find.<br /><br />
+
+              Three months of classes, just the start,<br />
+              Before you followed your healing heart.<br />
+              Though distance tried to dim our flame,<br />
+              We stayed in touch — never the same.<br /><br />
+
+              You saw my mess, I saw your grace,<br />
+              Through every test, we found our place.<br />
+              A friendship strong, both fierce and kind,<br />
+              With honesty so rare to find.<br /><br />
+
+              You wait for me, I wait for you,<br />
+              Through exams, chaos, skies so blue.<br />
+              No judgment, pressure, or pretend,<br />
+              Just you and me — best friend to end.<br /><br />
+
+              Today I write, not just to cheer,<br />
+              But to say you’re loved, my Anu dear.<br />
+              With every laugh and tear we share,<br />
+              I know for sure — you’ll always be there."
             </p>
           </div>
         </div>
 
         {/* QR Code Section */}
+        <div className="mt-10 text-center">
         <div className="mt-6 text-center">
-          <div className="bg-muted/50 p-4 rounded-lg inline-block">
-            <div className="w-20 h-20 bg-primary/20 rounded border-2 border-dashed border-primary mx-auto mb-2 flex items-center justify-center">
-              <Newspaper className="w-8 h-8 text-primary" />
-            </div>
-            <p className="text-xs text-muted-foreground">
-              📱 Add QR codes linking to your special videos!
-            </p>
+  <div className="bg-muted/50 p-6 rounded-xl inline-block shadow-md">
+    <div className="w-40 h-40 mx-auto mb-2">
+      <img
+        src="/b.png"
+        alt="Scan to view birthday surprise!"
+        className="w-full h-full object-cover rounded border border-primary focus:outline-none focus:ring-0 focus:border-transparent"
+        draggable={false}
+      />
+    </div>
+   
+  </div>
+
           </div>
         </div>
       </Card>

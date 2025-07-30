@@ -5,16 +5,21 @@ import { Heart, Sparkles } from 'lucide-react';
 
 const PoemDisplay = () => {
   // Placeholder poems - user can customize these
-  const poemLines = [
-    "To the brightest star in my constellation of friends,",
-    "Your laughter echoes through every memory we've made,",
-    "Like sunshine breaking through the cloudiest days,",
-    "You bring magic to every moment we share.",
-    "Your kindness knows no bounds, your spirit so free,",
-    "In this beautiful tapestry of life, you're golden thread,",
-    "Happy Birthday to the most amazing soul I know,",
-    "May your day be filled with all the joy you bring to others! 🎂✨"
-  ];
+ const poemLines = [
+  "To the one who feels like a quiet spell in a noisy world — Anurati, you’re warmth in motion.",
+  "You carry yourself like a cat basking in sunlight — calm, gentle, and full of quiet strength.",
+  "Your presence brings ease, your laughter softens even the toughest days,",
+  "Your kindness moves through people like a soft breeze they didn’t know they needed.",
+  "You don’t just brighten rooms — you hold space for others without asking for anything in return.",
+  "You make ordinary moments feel like memories, just by being in them.",
+  "Your name, Anurati, already means affection — but you’ve redefined it.",
+  "You’ve made care look effortless, love feel safe, and friendship feel like magic.",
+  "You are the golden thread in this messy, beautiful life — connecting, healing, and making people feel seen.",
+  "So today, on your birthday, I hope the world gives back even a piece of the light you pour into it every day.",
+  "Because having you in our lives isn’t just a blessing — it’s something we should never take for granted.",
+  "Happy Birthday to the most soft-hearted, strong-souled person I know. 🎂✨"
+];
+
 
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [displayedLines, setDisplayedLines] = useState<string[]>([poemLines[0]]);
@@ -71,7 +76,7 @@ const PoemDisplay = () => {
         </div>
         
         <div className="text-center mt-6 text-sm text-muted-foreground">
-          <p>📝 Customize these poem lines in the code to make them personal!</p>
+          <p>Many more Happy returns of the day 💝</p>
         </div>
       </Card>
     </div>

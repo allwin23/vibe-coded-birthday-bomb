@@ -11,29 +11,41 @@ const OurStoryChapters = () => {
       title: "Chapter 1: The Beginning",
       icon: <Heart className="w-6 h-6" />,
       content: "Our friendship story starts here...",
-      description: "Share early photos and a poem about how you met",
-      placeholder: "📝 Add your 'how we met' story and early friendship photos here!"
+      description: "Last Photo before u left",
+      placeholder: {
+        image: "/first.jpg",
+        caption: "📝 This was the first moment our paths crossed — unforgettable beginnings."
+      }
     },
     {
       title: "Chapter 2: Adventures & Laughter", 
       icon: <Camera className="w-6 h-6" />,
       content: "From silly moments to grand adventures...",
-      description: "Video montages of trips and funny moments with poem excerpts",
-      placeholder: "🎬 Embed video montages and travel photos with relevant poem lines!"
+      description: "Everything we started together",
+      placeholder: {
+        image: "/Third.jpg",
+        caption: "🎬 Our laughter echoed through every frame of this adventure."
+      }
     },
     {
       title: "Chapter 3: Through Thick and Thin",
       icon: <Sparkles className="w-6 h-6" />,
       content: "The times that made our bond unbreakable...",
-      description: "Photos from challenging times with heartfelt poems",
-      placeholder: "💪 Share photos from meaningful moments with supportive poem excerpts!"
+      description: "Photos from challenging times but still together",
+      placeholder: {
+        image: "/o.jpg",
+        caption: "💪 Even the hard days felt easier because we had each other."
+      }
     },
     {
       title: "Chapter 4: What's Next?",
       icon: <MapPin className="w-6 h-6" />,
       content: "The future is bright with you by my side...",
-      description: "Coming soon section with future adventure wishes",
-      placeholder: "🌟 Add your wishes for future adventures and a 'what's next' video!"
+      description: "Coming soon section with future adventure wishes and more exciting memories",
+      placeholder: {
+        image: "/p.jpg",
+        caption: "🌟 Here's to more magical memories waiting just ahead."
+      }
     }
   ];
 
@@ -105,9 +117,18 @@ const OurStoryChapters = () => {
           
           <div className="bg-muted/50 rounded-lg p-6 border-2 border-dashed border-primary/30">
             <BookOpen className="w-12 h-12 mx-auto mb-4 text-primary/60" />
-            <p className="text-primary font-medium">
-              {chapters[currentChapter].placeholder}
-            </p>
+
+            <div className="flex flex-col items-center space-y-4">
+              <img 
+                src={chapters[currentChapter].placeholder.image} 
+                alt={chapters[currentChapter].title}
+                className="rounded-lg w-full max-w-xs mx-auto shadow-lg border border-primary/30"
+                draggable={false}
+              />
+              <p className="text-primary font-medium text-center">
+                {chapters[currentChapter].placeholder.caption}
+              </p>
+            </div>
           </div>
         </div>
 

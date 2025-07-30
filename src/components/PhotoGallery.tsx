@@ -2,17 +2,17 @@ import { useState } from 'react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ZoomIn } from 'lucide-react';
-import memory1 from '@/assets/memory-1.jpg';
-import memory2 from '@/assets/memory-2.jpg';
-import memory3 from '@/assets/memory-3.jpg';
-import memory4 from '@/assets/memory-4.jpg';
+import memory1 from '@/assets/1.jpg';
+import memory2 from '@/assets/5.jpg';
+import memory3 from '@/assets/3.jpg';
+import memory4 from '@/assets/4.jpg';
 
 const PhotoGallery = () => {
   const photos = [
-    { id: 1, src: memory1, caption: "Upload Photo 1 of Bestie" },
-    { id: 2, src: memory2, caption: "Upload Photo 2 of Bestie" },
-    { id: 3, src: memory3, caption: "Upload Photo 3 of Bestie" },
-    { id: 4, src: memory4, caption: "Upload Photo 4 of Bestie" },
+    { id: 1, src: memory1, caption: "Awesome" },
+    { id: 2, src: memory2, caption: "u know who it is ??" },
+    { id: 3, src: memory3, caption: "vibe han" },
+    { id: 4, src: memory4, caption: "Sun set feels less" },
   ];
 
   return (
@@ -28,7 +28,7 @@ const PhotoGallery = () => {
           className="text-xl font-medium text-white bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg animate-text-glow"
           style={{ textShadow: '0 2px 10px #2563eb, 0 1px 5px #ec4899' }}
         >
-          "Every picture tells a story, and ours are epic!"
+          "Every picture tells a story, and you  are epic!"
         </p>
         <div className="w-32 h-1 bg-primary/20 mx-auto mt-6 rounded-full"></div>
       </div>
@@ -44,8 +44,7 @@ const PhotoGallery = () => {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <ZoomIn className="w-8 h-8 text-white" />
-                </div>
+                                  </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/80 to-transparent p-4">
                   <p className="text-white text-sm font-medium">{photo.caption}</p>
                 </div>

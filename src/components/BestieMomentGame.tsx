@@ -4,10 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Eye, Trophy, Heart, Sparkles } from 'lucide-react';
-import memory1 from '@/assets/memory-1.jpg';
-import memory2 from '@/assets/memory-2.jpg';
-import memory3 from '@/assets/memory-3.jpg';
-import memory4 from '@/assets/memory-4.jpg';
+import memory1 from '@/assets/6.jpg';
+import memory2 from '@/assets/7.jpg';
+import memory3 from '@/assets/WhatsApp Image 2025-07-31 at 02.54.30_093ffd51.jpg';
+import memory4 from '@/assets/10.jpg';
 
 interface GameMoment {
   id: number;
@@ -27,37 +27,40 @@ const BestieMomentGame = () => {
 
   const moments: GameMoment[] = [
     {
-      id: 1,
-      image: memory1,
-      hint: "This was when we discovered our shared love for adventure!",
-      answer: "beach day",
-      poemLine: "Sandy toes and salty hair, memories beyond compare",
-      revealed: false
-    },
+  id: 1,
+  image: memory1,
+  hint: "'Jo'kes cant be done lightly🌚🌚",
+  answer: "Marriage day",
+  poemLine: "The day shimmered with joy and nerves alike,\nAs you met the fam and instantly felt like light.",
+  revealed: false
+}
+,
+   {
+  id: 2,
+  image: memory2,
+  hint: "🚗 Just an hour, but worth every mile — the kind of birthday that ends too soon.",
+  answer: "Last Birthday ",
+  poemLine: "Even for a fleeting hour, you made the day glow,\nA quiet reminder of how far our friendship will go.",
+  revealed: false
+},
     {
-      id: 2,
-      image: memory2,
-      hint: "The day we laughed until our stomachs hurt!",
-      answer: "movie night",
-      poemLine: "Through laughter and through tears, you've been there all these years",
-      revealed: false
-    },
+  id: 3,
+  image: memory3,
+  hint: "🌸 The first ethnic day — a ride just for one photo, but worth a thousand memories.",
+  answer: "ethnic day",
+  poemLine: "For just one photo I crossed the day,\nBut your smile made the trip more than okay.",
+  revealed: false
+}
+,
     {
-      id: 3,
-      image: memory3,
-      hint: "Our favorite spot for deep conversations",
-      answer: "coffee shop",
-      poemLine: "Over coffee cups and dreams, nothing is quite what it seems",
-      revealed: false
-    },
-    {
-      id: 4,
-      image: memory4,
-      hint: "The celebration that started it all!",
-      answer: "birthday party",
-      poemLine: "Every moment shared with you, makes ordinary things feel new",
-      revealed: false
-    }
+  id: 4,
+  image: memory4,
+  hint: "🎲 Where strategy met laughter — the boardroom afternoon we didn't want to end.",
+  answer: "Board room First Day 😉",
+  poemLine: "In dice and laughs our time flew fast,\nAn afternoon I wished would forever last.",
+  revealed: false
+}
+
   ];
 
   const [gameMoments, setGameMoments] = useState(moments);
@@ -66,15 +69,13 @@ const BestieMomentGame = () => {
     const current = gameMoments[currentMoment];
     const isCorrect = guess.toLowerCase().includes(current.answer.toLowerCase()) ||
                      current.answer.toLowerCase().includes(guess.toLowerCase());
-    
+
     if (isCorrect) {
       setScore(score + 10);
     }
-    
-    // Always reveal after a guess
+
     setGameState('revealed');
-    
-    // Mark as revealed
+
     const updatedMoments = [...gameMoments];
     updatedMoments[currentMoment].revealed = true;
     setGameMoments(updatedMoments);
@@ -166,14 +167,15 @@ const BestieMomentGame = () => {
             <div className="relative">
               <div className="relative overflow-hidden rounded-lg shadow-celebration">
                 <img
-                  src={current.image}
-                  alt="Mystery memory"
-                  className={`w-full h-64 object-cover transition-all duration-500 ${
-                    gameState === 'playing' 
-                      ? 'filter blur-sm scale-150 opacity-70' 
-                      : 'filter blur-0 scale-100 opacity-100'
-                  }`}
-                />
+  src={current.image}
+  alt="Mystery memory"
+  className={`w-full max-w-md mx-auto rounded-xl shadow-md mb-8 h-64 object-cover object-[50%_10%] transition-all duration-500 ${
+    gameState === 'playing' 
+      ? 'filter blur-sm scale-150 opacity-70' 
+      : 'filter blur-0 scale-100 opacity-100'
+  }`}
+/>
+
                 {gameState === 'playing' && (
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-celebration-pink/20 flex items-center justify-center">
                     <Eye className="w-12 h-12 text-white animate-pulse" />

@@ -15,7 +15,28 @@ const ComplimentGame = () => {
     "Your wisdom and advice always come at the perfect time! 🦋",
     "You make the world a brighter place just by being in it! 🌈",
     "Your strength and resilience are truly admirable! 💪",
-    "You're absolutely amazing in every single way! 🎉"
+    "You're absolutely amazing in every single way! 🎉",
+    "You don’t just walk into a room — you shift its entire mood with your peaceful energy. 🕊️",
+
+"You’re like a soft sunrise after a long night — warm, gentle, and quietly breathtaking. 🌅",
+
+"The way you care without needing to be asked is the rarest kind of magic. ✨",
+
+"Even in chaos, you’re composed — like a cat curling up right where calm is needed most. 🐾",
+
+"Anurati, your name means affection — but you live it in every action, every word. 💗",
+
+"You hold space for others in a way that makes people feel safe to be themselves. 🛡️",
+
+"You're a gentle protector — always listening, always present, never seeking attention. 🌙",
+
+"Your presence is like a healing balm; even silence with you feels like a conversation. 🍃",
+
+"You bring fantasy into reality — not with spells, but with pure-hearted love and intention. 🧚",
+
+"Having you in someone's life feels like having a secret blessing they’ll forever be grateful for. 💫"
+
+
   ];
 
   const [currentCompliment, setCurrentCompliment] = useState<string | null>(null);
@@ -77,7 +98,7 @@ const ComplimentGame = () => {
         )}
         
         <div className="text-center mt-8 text-sm text-muted-foreground">
-          <p>💡 Customize the compliments array in the code to make them personal!</p>
+          <p>Make sure u laugh everyday  💟☺️☺️ </p>
         </div>
       </div>
     </div>
