@@ -50,7 +50,7 @@ const VideoWall = () => {
       </div>
 
       <div className="text-center mt-8 text-sm text-muted-foreground">
-        <p>📌 You can add more YouTube Shorts or Reels by replacing the links above!</p>
+        <p>📌Need more videos to be captured!</p>
       </div>
     </div>
   );

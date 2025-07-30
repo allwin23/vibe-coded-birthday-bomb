@@ -55,7 +55,7 @@ const Index = () => {
                   className="text-5xl md:text-7xl lg:text-8xl font-bold text-white bg-gradient-to-r from-celebration-green via-celebration-purple to-celebration-pink bg-clip-text mb-8 animate-fade-in-up"
                   style={{ textShadow: '0 4px 24px #a7f3d0, 0 2px 8px #c4b5fd' }}
                 >
-                  [Bestie's Name]! <span className="inline-block animate-bounce">🥳</span>
+                  Dr.Annnuuurati! <span className="inline-block animate-bounce">🥳</span>
                 </h2>
               </div>
             </div>
@@ -96,7 +96,7 @@ const Index = () => {
               <div className="text-center space-y-8 max-w-4xl mx-auto">
                 <ScrapbookText text="Welcome to Your Special Day!" />
                 <p className="text-xl md:text-2xl text-muted-foreground">
-                  A digital love bomb crafted with all my heart 💝
+                  A digital creative bomb crafted to make you laugh 😂😂
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 mt-8">
                   <Heart className="w-8 h-8 text-celebration-pink animate-pulse" />
