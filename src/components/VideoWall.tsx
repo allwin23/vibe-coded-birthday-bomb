@@ -35,11 +35,12 @@ const VideoWall = () => {
         {/* 📱 Personal Video (Portrait) */}
         <Card className="p-6 shadow-celebration hover:shadow-magical transition-all duration-300">
           <div className="aspect-video mb-4 bg-muted rounded-lg overflow-hidden">
-            <video
-              src="/videos/my-portrait-video.mp4"
-              controls
-              className="w-full h-full object-cover rounded-lg"
-            />
+            <iframe
+              src="https://drive.google.com/file/d/1kgsxmY6ISU78Y0JDN6WLQ4C-g0aMmn1x/preview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
           </div>
           <div className="text-center">
             <p className="text-lg font-medium text-primary">
@@ -57,4 +58,3 @@ const VideoWall = () => {
 };
 
 export default VideoWall;
- 
